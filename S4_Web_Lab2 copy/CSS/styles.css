@@ -1,0 +1,210 @@
+/* Lab2 - Step2 */
+body {
+    background-color : #CCFFCC;
+    font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+header {
+    background-image : url(../img/header_paint.png);
+    padding : 15px;
+    text-align : center;
+}
+
+footer {
+    background-image : url(../img/footer_image.png);
+    padding : 15px;
+    text-align : center;
+}
+
+section{
+    margin-top : 5px;
+    margin-bottom : 5px;
+    padding : 10px;
+    background-color: #00994C;
+}
+
+h1{
+    color : #FF99CC;
+}
+h2{
+    color : #CCFFCC
+}
+h3{
+    color : #66FF66;
+}
+
+nav{
+    display: block;
+    margin : 10px;
+    padding : 10px;
+}
+
+/*Links*/
+a{
+    text-decoration-line: none;
+    color : white;
+}
+a:hover{
+    background-color: #bc92e7;
+    border-radius: 5px;
+}
+nav a:first-child:hover{
+    color: #094161;
+    border-radius: 5px;
+}
+nav a:nth-child(2):hover{
+    color: #669481;
+    border-radius: 5px;
+}
+nav a:nth-child(3):hover{
+    color: #f33f12;
+    border-radius: 5px;
+}
+section a{
+    color : rgb(233, 151, 223);
+    font-style : italic;
+}
+
+header img{
+    height :auto;
+    width   : 350px;
+    border-radius : 10px;
+}
+
+/* Lab2 - Step3 */
+#definition{
+
+    font-family : Georgia, serif;
+    font-style : bold;
+    font-size : 1.2em;;
+}
+
+#citation{
+    font-style : italic;
+}
+
+#postit{
+    display : flex;
+    flex-wrap : wrap;
+    list-style-type : none;
+    justify-content :space-between;
+    padding : 0;
+    margin: 0;
+}
+
+.postit-item{
+    background-color : #FF99CC;
+    border : 2px solid #2a5d2aa8;
+    border-radius : 1px;
+    position : relative;
+    padding : 10px;
+    margin : 20px;
+    color : white;
+}
+
+.postit-item ul {
+    display : none;
+    position : absolute;
+    min-width : 130px;
+    z-index: 1;
+    background-color : #cb8acd;
+    color : white;
+    border : 2px solid #048d04a8;
+}
+
+.postit-item:hover ul{
+    display : block;
+
+}
+
+li ul{
+    margin : 15px;
+    padding : 10px;
+    list-style-type : disc;
+    list-style-position : inside;
+}
+
+li:first-child ul{
+    color : blue;
+}
+li:nth-child(2) ul{
+    color : green;
+}
+li:nth-child(3) ul{
+    color : red;
+}
+li:nth-child(4) ul{
+    color : yellow;
+}
+li:nth-child(5) ul{
+    color : purple;
+}
+
+/* Lab2 - Step4 */
+
+thead{
+    background-color : #6ec04b;
+    color : white;
+    font-size : 1.2em;
+    text-align: center;
+    border: 2px solid #2a5d2aa8;
+}
+td:first-child{
+    background-color : #6ec04b;
+    color : white;
+    font-size : 1.2em;
+    text-align: center;
+    border: 2px solid #2a5d2aa8;
+}
+td:nth-child(2){
+    color : rgb(229, 245, 223);
+    font-size : 1.2em;
+    text-align: center;
+    border: 2px solid #2a5d2aa8;
+}
+td:nth-child(3){
+    color : rgb(229, 245, 223);
+    font-size : 1.2em;
+    text-align: center;
+    border: 2px solid #2a5d2aa8;
+}
+
+table{
+    border-collapse : collapse;
+    margin : 20px;
+    padding : 10px;
+    background-color : #00994C;
+    color : white;
+}
+
+form{
+    display : flex;
+    flex-direction : column;
+    margin : 20px;
+    padding : 10px;
+    color : white;
+}
+label{
+    margin : 2px;
+    padding : 2px;
+    color : white;
+}
+input[type="submit"]{
+    margin : 2px;
+    padding : 2px;
+    background-color: #FF99CC;
+    color : white;
+    border : 2px solid #2a5d2aa8;
+    font-size : 1.2em;
+}
+label[for="question1"]{
+    color : #66FF66;
+    font-style : italic;
+    font-size : 1.2em;
+}
+label[for="question2"]{
+    color : #66FF66;
+    font-style : italic;
+    font-size : 1.2em;
+}
